@@ -1,0 +1,6 @@
+load("//:some_rule.bzl", "some_rule")
+
+some_rule(
+    name = "some_name",
+    arg = "\\\\two\\\\two\\\\\\three\\\\\\\\four\\one"
+)
