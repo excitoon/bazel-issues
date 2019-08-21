@@ -1,0 +1,6 @@
+load(":repo.bzl", "case_one", "case_two", "case_three", "case_four")
+
+case_one(name = "case_one")
+case_two(name = "case_two")
+case_three(name = "case_three")
+case_four(name = "case_four")
