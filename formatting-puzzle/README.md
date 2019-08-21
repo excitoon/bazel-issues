@@ -1,4 +1,22 @@
-﻿### Description
+﻿### Short description
+
+Run one of these:
+```
+> bazelisk build ... --crosstool_top=@case_one//:toolchain
+> bazelisk build ... --crosstool_top=@case_two//:toolchain
+> bazelisk build ... --crosstool_top=@case_three//:toolchain
+> bazelisk build ... --crosstool_top=@case_four//:toolchain
+```
+
+and get:
+```
+Internal error thrown during build. Printing stack trace: java.util.UnknownFormatConversionException: Conversion = ' '
+Internal error thrown during build. Printing stack trace: java.util.MissingFormatArgumentException: Format specifier '%s'
+Internal error thrown during build. Printing stack trace: java.util.UnknownFormatConversionException: Conversion = '.'
+Internal error thrown during build. Printing stack trace: java.util.MissingFormatArgumentException: Format specifier '%d'
+```
+
+### Description
 
 ```
 > bazelisk build ... --crosstool_top=@case_one//:toolchain
